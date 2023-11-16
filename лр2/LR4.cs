@@ -70,11 +70,12 @@ namespace ЗКИ
             {
                 newKey += EncryptFraza;
             }
+            key.Text = newKey;
             StringBuilder encryptVijer = new StringBuilder();
-            for (int i = 0; i < MessageForEncrypt.Length; i++)
+            for (int i = 0; i < message.Length; i++)
             {
-                int rowIndex = MessageForEncrypt.IndexOf(message[i]);
-                int colIndex = MessageForEncrypt.IndexOf(newKey[i]);
+                int rowIndex = CryptoSystemMessage.IndexOf(message[i]);
+                int colIndex = CryptoSystemMessage.IndexOf(newKey[i]);
                 encryptVijer.Append(CryptSystem[rowIndex][colIndex]);
             }
             return encryptVijer.ToString();
@@ -93,7 +94,7 @@ namespace ЗКИ
 
             for (int i = 0; i < Letters.Length; i++)
             {
-                if (Fraza.IndexOf(Letters[i]) != -1) continue;
+                if (frazaCezar.IndexOf(Letters[i]) != -1) continue;
                 cryptoSystemMessage.Append(Letters[i]);
                 Rows.Append(Letters[i]);
                 Rows.Append("\n");
@@ -138,6 +139,7 @@ namespace ЗКИ
             {
                 newKey += EncryptFraza;
             }
+            key.Text = newKey;
             StringBuilder dencryptVijer = new StringBuilder();
             for (int i = 0; i < messageForDencrypt.Length; i++)
             {
@@ -146,7 +148,7 @@ namespace ЗКИ
                 {
                     if (messageForDencrypt[i] == CryptSystem[j][colIndex])
                     {
-                        dencryptVijer.Append(CryptoSystemMessage[colIndex]);
+                        dencryptVijer.Append(CryptoSystemMessage[j]);
                         break;
                     }
                 }

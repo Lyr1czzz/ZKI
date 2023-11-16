@@ -45,6 +45,7 @@
             txtAnswer = new RichTextBox();
             txtColumns = new RichTextBox();
             txtRows = new RichTextBox();
+            key = new Label();
             SuspendLayout();
             // 
             // txtKeyCezar
@@ -197,11 +198,21 @@
             txtRows.TabIndex = 16;
             txtRows.Text = "";
             // 
+            // key
+            // 
+            key.AutoSize = true;
+            key.Location = new Point(682, 334);
+            key.Name = "key";
+            key.Size = new Size(50, 20);
+            key.TabIndex = 17;
+            key.Text = "label5";
+            // 
             // LR4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1231, 803);
+            Controls.Add(key);
             Controls.Add(txtRows);
             Controls.Add(txtColumns);
             Controls.Add(label4);
@@ -245,5 +256,6 @@
         private RichTextBox txtAnswer;
         private RichTextBox txtColumns;
         private RichTextBox txtRows;
+        private Label key;
     }
 }
