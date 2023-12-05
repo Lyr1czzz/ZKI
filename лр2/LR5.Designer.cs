@@ -160,7 +160,7 @@
             // 
             // richTextBox3
             // 
-            richTextBox3.Location = new Point(653, 266);
+            richTextBox3.Location = new Point(920, 331);
             richTextBox3.Name = "richTextBox3";
             richTextBox3.Size = new Size(405, 147);
             richTextBox3.TabIndex = 31;
@@ -168,7 +168,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(893, 459);
+            button3.Location = new Point(1160, 524);
             button3.Name = "button3";
             button3.Size = new Size(165, 78);
             button3.TabIndex = 33;
@@ -178,7 +178,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(653, 459);
+            button4.Location = new Point(920, 524);
             button4.Name = "button4";
             button4.Size = new Size(165, 78);
             button4.TabIndex = 32;
