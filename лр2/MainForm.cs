@@ -52,5 +52,19 @@ namespace лр2
             lR6.Show();
             this.Hide();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            LR8 lR8 = new LR8();
+            lR8.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LR1 lR1 = new LR1();
+            lR1.Show();
+            this.Hide();
+        }
     }
 }

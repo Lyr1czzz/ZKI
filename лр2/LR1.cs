@@ -93,9 +93,12 @@ namespace ЗКИ
             richTextBox8.Text += word[7].ToString();
             richTextBox9.Text += word[8].ToString();
         }
+
+
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             string word = textBox1.Text;
+            UpdateMK();
             Encryption(word);
             string encrypt = richTextBox1.Text +
             richTextBox2.Text +
@@ -112,16 +115,17 @@ namespace ЗКИ
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             string word = ReadFile();
+            UpdateMK();
             Decipher(word);
-            textBox2.Text = richTextBox1.Text +
-            richTextBox2.Text +
-            richTextBox3.Text +
-            richTextBox4.Text +
-            richTextBox5.Text +
-            richTextBox6.Text +
-            richTextBox7.Text +
+            textBox2.Text = richTextBox6.Text +
+            richTextBox1.Text +
             richTextBox8.Text +
-            richTextBox9.Text;
+            richTextBox7.Text +
+            richTextBox5.Text +
+            richTextBox3.Text +
+            richTextBox2.Text +
+            richTextBox9.Text +
+            richTextBox4.Text;
         }
     }
 }

@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             richTextBox1 = new RichTextBox();
@@ -42,29 +40,6 @@
             richTextBox8 = new RichTextBox();
             richTextBox9 = new RichTextBox();
             SuspendLayout();
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(12, 22);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(121, 24);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "шифрование";
-            radioButton1.UseVisualStyleBackColor = true;
-            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(12, 124);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(137, 24);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "дешифрование";
-            radioButton2.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -168,8 +143,6 @@
             Controls.Add(richTextBox1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
             Name = "LR1";
             Text = "LR1";
             ResumeLayout(false);
@@ -177,9 +150,6 @@
         }
 
         #endregion
-
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
         private TextBox textBox1;
         private TextBox textBox2;
         private RichTextBox richTextBox1;
